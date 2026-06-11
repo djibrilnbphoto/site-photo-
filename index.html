@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Djibril NB Photo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+/* HERO */
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1520975958225-5f61d0d5b1f2?q=80&w=2000");
+    background-size:cover;
+    background-position:center;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.3rem;
+    opacity:0.8;
+}
+
+.btn{
+    margin-top:25px;
+    padding:12px 28px;
+    background:#ff2d2d;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+/* SECTIONS */
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+/* GALERIE */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* TARIFS */
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161616;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    line-height:2;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    opacity:0.7;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Djibril NB Photo</h1>
+    <p>Photo foot ⚽ | Clip rap 🎬 | Hainaut Belgique</p>
+    <a href="#portfolio" class="btn">Voir mon travail</a>
+</header>
+
+<section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="gallery">
+
+        <img src="0BFA9F93-2F25-4E0F-83D3-C2D5C32DCE5B.JPG">
+        <img src="EBF8A7DA-712B-4AEE-8112-9E93C36B7E75.JPG">
+        <img src="FFC51CAA-18B7-4F82-9193-E9D375EA4AE6.JPG">
+        <img src="490FF4F6-9003-4D0B-992B-69CDEF2CFFA1.JPG">
+        <img src="17877F7D-3DE1-4BD5-9B54-C49261F2035C.JPG">
+        <img src="CB70495E-C771-4F4E-9ECB-C98A368793FC.JPG">
+        <img src="CEADDC17-7DE5-4910-B340-CE5FB7E39FD8.JPG">
+
+    </div>
+</section>
+
+<section>
+    <h2>Tarifs</h2>
+
+    <div class="pricing">
+
+        <div class="card">
+            <h3>Photo Foot ⚽</h3>
+            <p><strong>5€ / joueur</strong></p>
+            <p>Hainaut (Belgique)</p>
+        </div>
+
+        <div class="card">
+            <h3>Déplacement 🚗</h3>
+            <p>Prix variable selon distance</p>
+        </div>
+
+        <div class="card">
+            <h3>Clip Rap 🎬</h3>
+            <p>Sur devis</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>📸 Instagram : Djibril.nb.photo</p>
+    <p>📧 Email : Djibril.nb.photo@gmail.com</p>
+</section>
+
+<footer>
+    © 2026 Djibril NB Photo
+</footer>
+
+</body>
+</html>
